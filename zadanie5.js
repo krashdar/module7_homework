@@ -22,7 +22,7 @@ class WirelessDevice extends Device{
     }
     charging(){
 //можно убрать у беcпроводных св-во ischarging и заменить метод charging чтобы он делал isOn=true, но я решил пока оставить так
-//также упростился бы метод getpower
+//также упростился бы метод getPower
         this.isCharging = true;
     }
     getCapacity(){
@@ -30,7 +30,7 @@ class WirelessDevice extends Device{
     }
 }
 
-//станет таким
+//getPower станет таким, все остальное не изменится
 // function getPower(obj){
 //     if (obj.isOn !== true) obj.power = 0;
 //     return obj.power;
